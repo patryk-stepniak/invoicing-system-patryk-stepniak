@@ -22,6 +22,6 @@ spring:
       password: abc123
 
 invoicing-system:
-  allowedOrigins: http://localhost:4200,https://invocing-test-1.herokuapp.com
+  allowedOrigins: http://localhost:4200
   csrf:
-    disable: true
+    disable: false
