@@ -1,0 +1,27 @@
+server:
+  port: 7777
+
+logging:
+  level:
+    org:
+      springframework:
+        boot: INFO
+    pl:
+      futurecollars:
+        invoicing: INFO
+        invoicing.db: DEBUG
+
+spring:
+  profiles:
+    active: file
+  flyway:
+    enabled: false
+  security:
+    user:
+      name: piotr
+      password: abc123
+
+invoicing-system:
+  allowedOrigins: http://localhost:4200
+  csrf:
+    disable: true
